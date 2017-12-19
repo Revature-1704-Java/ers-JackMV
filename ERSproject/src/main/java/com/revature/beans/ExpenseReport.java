@@ -38,6 +38,9 @@ public class ExpenseReport {
 		this.date = date;
 	}
 
-
+	@Override
+	public String toString() {
+		return ("Amount: " + this.amount + ", For: " + this.description + ", On: " + this.date);
+	}
 
 }

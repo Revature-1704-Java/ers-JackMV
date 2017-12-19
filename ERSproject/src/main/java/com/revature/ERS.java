@@ -71,6 +71,9 @@ public class ERS {
 			if(input.equals("view")) {
 				employeeID = Integer.parseInt(s.next());
 				reports = dao.getReports(employeeID);
+				for (ExpenseReport r : reports) {
+					System.out.println(r);
+				}
 			}
 		}
 		

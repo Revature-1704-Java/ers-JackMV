@@ -64,8 +64,9 @@ public class ExpenseDAO {
 			ps.setInt(2, amount);
 			ps.setString(3, description);
 			ps.setString(4, timeString);
-			System.out.println(sql);
-			ps.executeUpdate(sql);
+			int debug;
+			debug = ps.executeUpdate();
+			System.out.println(debug);
 			
 		} catch (Exception ex) {
 			ex.getMessage();
