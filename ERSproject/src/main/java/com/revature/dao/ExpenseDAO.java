@@ -33,10 +33,7 @@ public class ExpenseDAO {
 			while(rs.next()) {
 				actualPassword = rs.getString("PASSWORD");
 				permissionLevel = rs.getString("EMPLOYEE_PERMISSIONS");
-			}
-			
-			System.out.println(actualPassword);
-			
+			}			
 			if (password.equals(actualPassword)) {
 				return permissionLevel;
 			} else {
